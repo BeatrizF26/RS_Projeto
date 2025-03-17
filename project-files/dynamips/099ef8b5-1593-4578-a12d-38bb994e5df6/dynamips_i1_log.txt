@@ -1,0 +1,72 @@
+Jan 15 00:11:27.711 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 15 00:11:27.711 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56093.
+Jan 15 00:11:27.712 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 15 00:11:27.712 HYPERVISOR: exec_cmd: hypervisor working_dir /home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips 
+Jan 15 00:11:27.712 GENERAL: working_dir=/home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips
+Jan 15 00:11:27.712 HYPERVISOR: exec_cmd: hypervisor working_dir /home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips/cf3dd55e-3939-4220-be49-035465755030 
+Jan 15 00:11:27.712 GENERAL: working_dir=/home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips/cf3dd55e-3939-4220-be49-035465755030
+Jan 15 00:11:27.713 HYPERVISOR: exec_cmd: vm create Router1 2 c7200 
+Jan 15 00:11:27.713 VM: VM Router1 created.
+Jan 15 00:11:27.713 HYPERVISOR: exec_cmd: vm set_con_tcp_port Router1 5014 
+Jan 15 00:11:27.713 HYPERVISOR: exec_cmd: c7200 get_mac_addr Router1 
+Jan 15 00:11:27.713 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:11:27.713 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 0 0 C7200-IO-FE 
+Jan 15 00:11:27.714 HYPERVISOR: exec_cmd: vm set_disk0 Router1 0 
+Jan 15 00:11:27.714 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:11:27.714 HYPERVISOR: exec_cmd: vm set_idle_pc Router1 0x60893300 
+Jan 15 00:11:27.715 HYPERVISOR: exec_cmd: vm set_ios Router1 /home/beatriz-francisco/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 15 00:11:27.715 HYPERVISOR: exec_cmd: c7200 set_mac_addr Router1 ca02.1b5f.0000 
+Jan 15 00:11:27.715 HYPERVISOR: exec_cmd: vm set_nvram Router1 512 
+Jan 15 00:11:27.715 HYPERVISOR: exec_cmd: vm set_ram Router1 512 
+Jan 15 00:11:27.715 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:11:27.716 HYPERVISOR: exec_cmd: vm slot_remove_binding Router1 0 0 
+Jan 15 00:11:27.716 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:11:27.716 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 0 0 C7200-IO-2FE 
+Jan 15 00:11:27.716 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:11:27.716 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 1 0 PA-2FE-TX 
+Jan 15 00:11:27.716 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:11:27.716 HYPERVISOR: exec_cmd: vm slot_add_binding Router1 2 0 PA-2FE-TX 
+Jan 15 00:11:28.318 HYPERVISOR: exec_cmd: nio create_udp udp-5e7f41cd-2585-460f-83c7-3633199d7509 10008 127.0.0.1 10009 
+Jan 15 00:11:28.528 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router1 1 1 udp-5e7f41cd-2585-460f-83c7-3633199d7509 
+Jan 15 00:11:28.528 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:11:28.575 HYPERVISOR: exec_cmd: nio create_udp udp-6c1e6ca1-ea18-43e6-8913-4510e216b816 10012 127.0.0.1 10013 
+Jan 15 00:11:28.577 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router1 1 0 udp-6c1e6ca1-ea18-43e6-8913-4510e216b816 
+Jan 15 00:11:28.577 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:11:28.795 HYPERVISOR: exec_cmd: nio create_udp udp-fbe4b5ca-18b8-4fcd-9c49-0c88e9dfefe6 10020 127.0.0.1 10021 
+Jan 15 00:11:28.796 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router1 0 0 udp-fbe4b5ca-18b8-4fcd-9c49-0c88e9dfefe6 
+Jan 15 00:11:28.797 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:11:29.133 HYPERVISOR: exec_cmd: nio create_udp udp-812d1763-df4d-46fa-a663-087dbed099a5 10030 127.0.0.1 10031 
+Jan 15 00:11:29.134 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router1 0 1 udp-812d1763-df4d-46fa-a663-087dbed099a5 
+Jan 15 00:11:29.135 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:11:34.799 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Jan 15 00:11:34.805 VM: VM Ghost created.
+Jan 15 00:11:34.805 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/beatriz-francisco/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 15 00:11:34.806 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jan 15 00:11:34.806 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips/c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Jan 15 00:11:34.806 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Jan 15 00:11:34.806 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 15 00:11:34.806 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Jan 15 00:11:34.807 HYPERVISOR: exec_cmd: vm start Ghost 
+Jan 15 00:11:35.106 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jan 15 00:11:35.107 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jan 15 00:11:35.272 VM: VM Ghost shutdown.
+Jan 15 00:11:35.273 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Jan 15 00:11:35.273 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jan 15 00:11:35.273 VM: VM Ghost destroyed.
+Jan 15 00:11:35.275 HYPERVISOR: exec_cmd: vm set_ghost_status Router1 2 
+Jan 15 00:11:35.275 HYPERVISOR: exec_cmd: vm set_ghost_file Router1 /home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips/c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Jan 15 00:11:35.275 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:11:35.276 HYPERVISOR: exec_cmd: vm set_config Router1 configs/i2_startup-config.cfg 
+Jan 15 00:11:35.276 HYPERVISOR: exec_cmd: vm start Router1 
+Jan 15 00:12:05.529 HYPERVISOR: exec_cmd: vm extract_config Router1 
+Jan 15 00:31:35.229 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:31:35.230 HYPERVISOR: exec_cmd: vm stop Router1 
+Jan 15 00:31:35.382 VM: VM Router1 shutdown.
+Jan 15 00:31:35.383 HYPERVISOR: exec_cmd: vm extract_config Router1 
+Jan 15 00:31:35.878 HYPERVISOR: exec_cmd: vm get_status Router1 
+Jan 15 00:31:35.878 HYPERVISOR: exec_cmd: vm extract_config Router1 
+Jan 15 00:31:35.879 HYPERVISOR: exec_cmd: vm delete Router1 
+Jan 15 00:31:35.879 VM: VM Router1 destroyed.
+Jan 15 00:31:35.880 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 15 00:31:36.157 HYPERVISOR: Stopped.
+Jan 15 00:31:36.157 GENERAL: reset done.

@@ -1,0 +1,51 @@
+Jan 14 17:26:08.822 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 14 17:26:08.822 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 57847.
+Jan 14 17:26:08.827 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 14 17:26:08.828 HYPERVISOR: exec_cmd: hypervisor working_dir /home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips 
+Jan 14 17:26:08.828 GENERAL: working_dir=/home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips
+Jan 14 17:26:08.828 HYPERVISOR: exec_cmd: hypervisor working_dir /home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips/fa6e9f66-28bd-4886-bd44-a8d18f79898c 
+Jan 14 17:26:08.828 GENERAL: working_dir=/home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips/fa6e9f66-28bd-4886-bd44-a8d18f79898c
+Jan 14 17:26:08.829 HYPERVISOR: exec_cmd: vm create Router2 5 c7200 
+Jan 14 17:26:08.829 VM: VM Router2 created.
+Jan 14 17:26:08.829 HYPERVISOR: exec_cmd: vm set_con_tcp_port Router2 5018 
+Jan 14 17:26:08.829 HYPERVISOR: exec_cmd: c7200 get_mac_addr Router2 
+Jan 14 17:26:08.830 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 14 17:26:08.830 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 0 0 C7200-IO-FE 
+Jan 14 17:26:08.831 HYPERVISOR: exec_cmd: vm set_disk0 Router2 0 
+Jan 14 17:26:08.831 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 14 17:26:08.832 HYPERVISOR: exec_cmd: vm set_idle_pc Router2 0x60893300 
+Jan 14 17:26:08.832 HYPERVISOR: exec_cmd: vm set_ios Router2 /home/beatriz-francisco/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jan 14 17:26:08.833 HYPERVISOR: exec_cmd: c7200 set_mac_addr Router2 ca05.5a4c.0000 
+Jan 14 17:26:08.833 HYPERVISOR: exec_cmd: vm set_nvram Router2 512 
+Jan 14 17:26:08.833 HYPERVISOR: exec_cmd: vm set_ram Router2 512 
+Jan 14 17:26:08.834 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 14 17:26:08.834 HYPERVISOR: exec_cmd: vm slot_remove_binding Router2 0 0 
+Jan 14 17:26:08.834 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 14 17:26:08.835 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 0 0 C7200-IO-2FE 
+Jan 14 17:26:08.835 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 14 17:26:08.835 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 1 0 PA-2FE-TX 
+Jan 14 17:26:08.836 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 14 17:26:08.836 HYPERVISOR: exec_cmd: vm slot_add_binding Router2 2 0 PA-2FE-TX 
+Jan 14 17:26:10.789 HYPERVISOR: exec_cmd: nio create_udp udp-8705dca0-7449-492f-98bc-5da332b2db76 10036 127.0.0.1 10037 
+Jan 14 17:26:11.003 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 0 udp-8705dca0-7449-492f-98bc-5da332b2db76 
+Jan 14 17:26:11.003 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 14 17:26:11.090 HYPERVISOR: exec_cmd: nio create_udp udp-77b5e3f7-98ae-4b2a-b6d6-308eefc370be 10040 127.0.0.1 10041 
+Jan 14 17:26:11.092 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 1 udp-77b5e3f7-98ae-4b2a-b6d6-308eefc370be 
+Jan 14 17:26:11.093 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 14 17:29:22.103 HYPERVISOR: exec_cmd: vm set_ghost_status Router2 2 
+Jan 14 17:29:22.103 HYPERVISOR: exec_cmd: vm set_ghost_file Router2 /home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips/c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Jan 14 17:29:22.104 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 14 17:29:22.104 HYPERVISOR: exec_cmd: vm set_config Router2 configs/i5_startup-config.cfg 
+Jan 14 17:29:22.105 HYPERVISOR: exec_cmd: vm start Router2 
+Jan 14 17:29:52.323 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Jan 14 18:06:03.241 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 14 18:06:03.241 HYPERVISOR: exec_cmd: vm stop Router2 
+Jan 14 18:06:03.342 VM: VM Router2 shutdown.
+Jan 14 18:06:03.343 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Jan 14 18:06:03.450 HYPERVISOR: exec_cmd: vm get_status Router2 
+Jan 14 18:06:03.450 HYPERVISOR: exec_cmd: vm extract_config Router2 
+Jan 14 18:06:03.451 HYPERVISOR: exec_cmd: vm delete Router2 
+Jan 14 18:06:03.451 VM: VM Router2 destroyed.
+Jan 14 18:06:03.451 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 14 18:06:03.860 HYPERVISOR: Stopped.
+Jan 14 18:06:03.860 GENERAL: reset done.

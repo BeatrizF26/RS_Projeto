@@ -1,0 +1,48 @@
+Jan 14 17:26:08.776 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jan 14 17:26:08.776 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56967.
+Jan 14 17:26:08.781 HYPERVISOR: exec_cmd: hypervisor version 
+Jan 14 17:26:08.782 HYPERVISOR: exec_cmd: hypervisor working_dir /home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips 
+Jan 14 17:26:08.782 GENERAL: working_dir=/home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips
+Jan 14 17:26:08.782 HYPERVISOR: exec_cmd: hypervisor working_dir /home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips/0336bc49-e606-4f65-9fbc-ec91b8eb6f7a 
+Jan 14 17:26:08.782 GENERAL: working_dir=/home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips/0336bc49-e606-4f65-9fbc-ec91b8eb6f7a
+Jan 14 17:26:08.783 HYPERVISOR: exec_cmd: vm create SWL3B 4 c3725 
+Jan 14 17:26:08.783 VM: VM SWL3B created.
+Jan 14 17:26:08.783 HYPERVISOR: exec_cmd: vm set_con_tcp_port SWL3B 5017 
+Jan 14 17:26:08.784 HYPERVISOR: exec_cmd: c3725 get_mac_addr SWL3B 
+Jan 14 17:26:08.784 HYPERVISOR: exec_cmd: vm set_disk0 SWL3B 1 
+Jan 14 17:26:08.784 HYPERVISOR: exec_cmd: vm set_ios SWL3B /home/beatriz-francisco/GNS3/images/IOS/c3725-advipservicesk9-mz.124-21.image 
+Jan 14 17:26:08.785 HYPERVISOR: exec_cmd: c3725 set_mac_addr SWL3B c204.5a15.0000 
+Jan 14 17:26:08.785 HYPERVISOR: exec_cmd: vm set_nvram SWL3B 256 
+Jan 14 17:26:08.786 HYPERVISOR: exec_cmd: vm get_status SWL3B 
+Jan 14 17:26:08.786 HYPERVISOR: exec_cmd: vm slot_add_binding SWL3B 1 0 NM-16ESW 
+Jan 14 17:26:10.108 HYPERVISOR: exec_cmd: nio create_udp udp-aaa02288-f1a8-4566-b591-f87872ecf373 10022 127.0.0.1 10023 
+Jan 14 17:26:10.363 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3B 0 1 udp-aaa02288-f1a8-4566-b591-f87872ecf373 
+Jan 14 17:26:10.363 HYPERVISOR: exec_cmd: vm get_status SWL3B 
+Jan 14 17:26:10.450 HYPERVISOR: exec_cmd: nio create_udp udp-1a58d57f-d217-4b2f-b17a-c8f505feebb8 10026 127.0.0.1 10027 
+Jan 14 17:26:10.452 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3B 0 0 udp-1a58d57f-d217-4b2f-b17a-c8f505feebb8 
+Jan 14 17:26:10.453 HYPERVISOR: exec_cmd: vm get_status SWL3B 
+Jan 14 17:26:10.774 HYPERVISOR: exec_cmd: nio create_udp udp-aef7a768-6016-422f-b358-92253801a1fa 10034 127.0.0.1 10035 
+Jan 14 17:26:10.776 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3B 1 0 udp-aef7a768-6016-422f-b358-92253801a1fa 
+Jan 14 17:26:10.776 HYPERVISOR: exec_cmd: vm get_status SWL3B 
+Jan 14 17:26:11.700 HYPERVISOR: exec_cmd: nio create_udp udp-18cc54dc-fab1-4a2c-becf-4bbd03c13cc1 10056 127.0.0.1 10057 
+Jan 14 17:26:11.702 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3B 1 1 udp-18cc54dc-fab1-4a2c-becf-4bbd03c13cc1 
+Jan 14 17:26:11.703 HYPERVISOR: exec_cmd: vm get_status SWL3B 
+Jan 14 17:26:11.815 HYPERVISOR: exec_cmd: nio create_udp udp-a1c31a38-8d5c-4333-b85d-432f0e445466 10060 127.0.0.1 10061 
+Jan 14 17:26:11.817 HYPERVISOR: exec_cmd: vm slot_add_nio_binding SWL3B 1 2 udp-a1c31a38-8d5c-4333-b85d-432f0e445466 
+Jan 14 17:26:11.817 HYPERVISOR: exec_cmd: vm get_status SWL3B 
+Jan 14 17:29:22.101 HYPERVISOR: exec_cmd: vm set_ghost_status SWL3B 2 
+Jan 14 17:29:22.102 HYPERVISOR: exec_cmd: vm set_ghost_file SWL3B /home/beatriz-francisco/Desktop/Projeto-RS/project-files/dynamips/c3725-advipservicesk9-mz.124-21.image-128.ghost 
+Jan 14 17:29:22.103 HYPERVISOR: exec_cmd: vm get_status SWL3B 
+Jan 14 17:29:22.103 HYPERVISOR: exec_cmd: vm set_config SWL3B configs/i4_startup-config.cfg 
+Jan 14 17:29:22.104 HYPERVISOR: exec_cmd: vm start SWL3B 
+Jan 14 18:06:03.219 HYPERVISOR: exec_cmd: vm get_status SWL3B 
+Jan 14 18:06:03.220 HYPERVISOR: exec_cmd: vm stop SWL3B 
+Jan 14 18:06:03.369 VM: VM SWL3B shutdown.
+Jan 14 18:06:03.369 HYPERVISOR: exec_cmd: vm extract_config SWL3B 
+Jan 14 18:06:03.857 HYPERVISOR: exec_cmd: vm get_status SWL3B 
+Jan 14 18:06:03.857 HYPERVISOR: exec_cmd: vm extract_config SWL3B 
+Jan 14 18:06:03.899 HYPERVISOR: exec_cmd: vm delete SWL3B 
+Jan 14 18:06:03.899 VM: VM SWL3B destroyed.
+Jan 14 18:06:03.899 HYPERVISOR: exec_cmd: hypervisor stop 
+Jan 14 18:06:04.380 HYPERVISOR: Stopped.
+Jan 14 18:06:04.380 GENERAL: reset done.
